@@ -7,7 +7,7 @@ body{
     border: 3px solid red;
     padding: 0;
     margin: 0;
-    background-color: rgb(37, 37, 56);
+    background-color: #0B192C;
     display: flex;
     flex-direction: column;
 }
@@ -26,20 +26,26 @@ header{
     justify-content: flex-end;
     margin: 25px;
     width: 1000px;
-    padding: 0 20px;
+    padding: 0 25px;
     flex-shrink: 1;
+    flex-grow: 0;
     gap: 25px;
 
-    background-color: rgb(50, 50, 66);
+    background-color: #0B192C;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgb(108, 102, 102);
-    border: 3px solid rgb(50, 48, 48);
+    box-shadow: 0 0 8px #FE7743;
+    border: 3px solid #060d17;
+    transition: 0.5s;
+}
+
+.head:hover{
+    box-shadow: 0 0 10px #FE7743;
 }
 
 .head ul{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     padding: 0;
 }
@@ -48,24 +54,54 @@ header{
     list-style: none;
     text-decoration: none;
     color: aliceblue;
-    transition: 10s;
+    letter-spacing: 1px;
 }
 
 .head ul li a:hover{
     text-decoration: underline;
 }
 
+.left-nav{
+    display: flex;
+    margin-right: auto;
+    flex-shrink: 0;
+    gap: 20px;
+}
+
 #logo{
-    text-decoration: none;
     display: flex;
     align-items: center;
-    margin-right: auto;
-
-    color: aliceblue;
-    font-size: larger;
-    font-weight: bolder;
-    letter-spacing: 5px;
 }
+
+#logo img{
+    width: 40px;
+    height: auto;
+}
+
+#logo-name{
+    display: flex;
+    align-items: flex-end;
+}
+
+#logo-name img{
+    width: auto;
+    height: 28px;
+    margin-bottom: 9px;
+}
+
+@media screen and (max-width:540px){
+    #logo-name{
+        display: none;
+    }
+}
+
+@media screen and (max-width:412px) {
+    #home-btn{
+        display: none;
+    }
+}
+    
+
 
 /* First Section ------------------------------------------------------------------ */
 
