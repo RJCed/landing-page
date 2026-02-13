@@ -1,12 +1,13 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    color: aliceblue;
 }
 
 body{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     padding: 0;
-    margin: 0;
+    margin: 0 50px;
     background-color: #0B192C;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ body{
 /* Header ------------------------------------------------ */
 
 header{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,7 +25,7 @@ header{
 .head{
     display: flex;
     justify-content: flex-end;
-    margin: 25px;
+    margin: 25px 0;
     width: 1000px;
     padding: 0 25px;
     flex-shrink: 1;
@@ -89,18 +90,32 @@ header{
     margin-bottom: 9px;
 }
 
-@media screen and (max-width:540px){
+@media screen and (max-width:580px){
     #logo-name{
         display: none;
     }
 }
 
-@media screen and (max-width:412px) {
+@media screen and (max-width:452px) {
     #home-btn{
         display: none;
     }
 }
     
+@media screen and (max-width:371px){
+    #logo{
+        margin: 11px 0;
+    }
+    
+    .head ul {
+        display: none;
+    }
+    
+    #logo-name{
+        display: flex;
+    }
+}
+
 
 
 /* First Section ------------------------------------------------------------------ */
@@ -111,12 +126,72 @@ header{
     min-height: 350px;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px 20px;
+}
+    
+.first-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 400px;
+    flex-shrink: 1;
 }
 
-.first img{
-    height: 160px;
-    width: 314px;
+.first-left h1{
+    margin: 0;
+    font-size: 38px;
 }
+
+.first-left p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+
+.first-btn{
+    display: flex;
+    gap: 30px;
+}
+
+.first-btn button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    background-color: #FE7743;
+    width: 100px;
+    height: 30px;
+    outline-style: none;
+    border: 0;
+    border-radius: 0 20px 0 20px;
+    transition: 0.3s;
+}
+
+.first-btn button:hover{
+    border-radius: 30px;
+}
+
+
+
+
+.first img{
+    max-width: 100%;
+    flex-shrink: 1;
+    height: auto;
+    width: 502px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #FE7743;
+    transition: 0.5s;
+}
+
+.first img:hover{
+    box-shadow: 0 0 13px #FE7743;
+}
+
+
+
 
 /* Second Section ------------------------------------------------------------------ */
 
