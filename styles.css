@@ -210,7 +210,12 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+
+    border: 3px solid red;
+    width: 100%;
 }
 
 .second ul li{
@@ -218,7 +223,21 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    border: 3px solid red;
+    max-width: 250px;
 }
+
+.second-desc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second ul li img{
+    
+}
+
 
 /* Third Section ------------------------------------------------------------------ */
 
