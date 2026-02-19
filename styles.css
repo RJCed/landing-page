@@ -273,9 +273,37 @@ header{
 /* Third Section ------------------------------------------------------------------ */
 
 .third {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+    /* border: 3px solid red; */
+    flex: 1;
+    max-width: 800px;
+    gap: 5px;
+}
+
+#quote{
+    /* border: 3px solid red; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    color: #9CA3AF;
+}
+
+#quote-bottom{
+    /* border: 3px solid red; */
+    align-self: flex-end;
+    font-size: 25px;
 }
 
 /* Fourth Section ------------------------------------------------------------------ */
