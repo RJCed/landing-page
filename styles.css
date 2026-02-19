@@ -374,6 +374,17 @@ footer {
     align-items: center;
 }
 
-#copyright{
+#copyright,
+#copyright span a{
     font-family: 'Courier New', Courier, monospace;
+}
+
+#copyright span a{
+    list-style: none;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#copyright span a:hover{
+    color: #FE7743;
 }
