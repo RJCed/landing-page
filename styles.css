@@ -52,6 +52,7 @@ header{
 }
 
 .head ul li a{
+    font-family: 'Courier New', Courier, monospace;
     list-style: none;
     text-decoration: none;
     color: aliceblue;
@@ -335,6 +336,7 @@ button:hover{
     transition: 0.5s;
 }
 
+
 .fourth-box:hover{
     box-shadow: 0 0 10px #FE7743;
 }
@@ -359,10 +361,28 @@ button:hover{
 .fourth-right{
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
+@media screen and (max-width:570px){
+    .fourth-box{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
 
+    .fourth-left{
+        margin-bottom: 0px;
+    }
+    .fourth-right{
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+        margin-top: 15px;
+    }
+}
 
 /* Footer ------------------------------------------------------------------ */
 
