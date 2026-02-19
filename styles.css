@@ -92,19 +92,19 @@ header{
     margin-bottom: 9px;
 }
 
-@media screen and (max-width:540px){
+@media screen and (max-width:570px){
     #logo-name{
         display: none;
     }
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:442px) {
     #home-btn{
         display: none;
     }
 }
     
-@media screen and (max-width:328px){
+@media screen and (max-width:359px){
     #logo{
         margin: 11px 0;
     }
@@ -244,7 +244,6 @@ button:hover{
 
 .second-name h2{
     margin: 0;
-    font-family: ;
     font-weight: 600;
     letter-spacing: 1.5px;
     font-size: large;
@@ -323,6 +322,7 @@ button:hover{
     justify-content: space-evenly;
     align-items: center;
     margin: 25px 0;
+    margin-top: 30px;
     width: 800px;
     padding: 0 25px;
     flex-shrink: 1;
@@ -397,6 +397,7 @@ footer {
 #copyright,
 #copyright span a{
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 #copyright span a{
